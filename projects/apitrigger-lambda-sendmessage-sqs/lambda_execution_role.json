@@ -15,7 +15,7 @@
                 "sqs:SendMessage"
             ],
             "Effect": "Allow",
-            "Resource": "arn:aws:sqs:us-east-1:xxxxxxxxxxxx:FUNCTIONNAME"
+            "Resource": "arn:aws:sqs:us-east-1:xxxxxxxxxxxx:SQS-QUEUE-NAME"
         }
     ]
 }
