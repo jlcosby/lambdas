@@ -11,7 +11,7 @@ def lambda_handler(event, context):
 
     sqs = boto3.client('sqs')
     sqs.send_message(
-        QueueUrl="arn:aws:sqs:us-east-1:xxxxxxxxxxxx:FUNCTIONNAME",
+        QueueUrl="https://sqs.us-east-1.amazonaws.com/xxxxxxxxxxxx/current-time",
         MessageBody=current_time
     )
     return {
